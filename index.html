@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project NO - Two</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .calculator h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .calculator input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .calculator button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .calculator button:hover {
+            background: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+  </head>
+  <body>
+
+    
+
+
+    <form>
+<h1 style="background-color: #218838; text-align: center; border-radius: 15px;"> BMI Calculate </h1>
+        <div class="calculator">
+            
+            <input type="number" id="weight" placeholder="Enter weight in kg" /> <br>
+            <input type="number" id="height" placeholder="Enter height in meters" /> <br>
+            <button style="border: black 3px solid ; border-radius: 6px;" onclick="calculateBMI()">Calculate BMI</button> 
+            <div class="result" id="result"></div>
+        </div>
+        
+    </form>
+    <script src="scrpit.js"></script>
+  </body>
+</html>
